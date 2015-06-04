@@ -101,23 +101,34 @@ module.exports = function (grunt) {
 
     var concatSrc;
     var concatDest;
+    var concatGridSrc;
+    var concatGridDest;
     var lessDest;
     var lessSrc;
     var files = {};
     var dist = {};
     concatSrc = 'global/build.less';
     concatDest = theme + '/build.less';
+    concatGridSrc = 'ui-grid-bootstrap/ui-grid-bootstrap.less';
+    concatGridDest = theme + '/ui-grid-bootstrap.less';
     lessDest = '<%=builddir%>/' + theme + '/bootstrap.css';
     lessSrc = [ theme + '/' + 'build.less' ];
+    lessGridDest = '<%=builddir%>/' + theme + '/ui-grid-bootstrap.css';
+    lessGridSrc = [ theme + '/' + 'ui-grid-bootstrap.less' ];
 
     dist = {src: concatSrc, dest: concatDest};
     grunt.config('concat.dist', dist);
-    files = {}; files[lessDest] = lessSrc;
+    grid = {src: concatGridSrc, dest: concatGridDest};
+    grunt.config('concat.grid', grid);
+    files = {};
+    files[lessDest] = lessSrc;
+    files[lessGridDest] = lessGridSrc;
     grunt.config('less.dist.files', files);
-    grunt.config('less.dist.options.compress', false);
+	grunt.config('less.dist.options.compress', false);
 
     grunt.task.run(['concat', 'less:dist', 'prefix:' + lessDest, 'clean:build',
-      compress ? 'compress:'+lessDest+':'+'<%=builddir%>/' + theme + '/bootstrap.min.css':'none']);
+      compress ? 'compress:'+lessDest+':'+'<%=builddir%>/' + theme + '/bootstrap.min.css':'none',
+      compress ? 'compress:'+lessGridDest+':'+'<%=builddir%>/' + theme + '/ui-grid-bootstrap.min.css':'none']);
   });
 
 grunt.registerTask('build_scss', 'build a regular theme from scss', function(theme, compress) {

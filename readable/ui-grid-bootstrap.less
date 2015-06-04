@@ -1,0 +1,87 @@
+/*!
+ * bootswatch v3.3.4+1
+ * Homepage: http://bootswatch.com
+ * Copyright 2012-2015 Thomas Park
+ * Licensed under MIT
+ * Based on Bootstrap
+*/
+@import "../ui-grid/src/less/grid";
+@import "../ui-grid/src/less/header";
+@import "../ui-grid/src/less/body";
+@import "../ui-grid/src/less/cell";
+@import "../ui-grid/src/less/footer";
+@import "../ui-grid/src/less/menu";
+@import "../ui-grid/src/less/sorting";
+@import "../ui-grid/src/less/icons";
+@import "../ui-grid/src/less/rtl";
+@import "../ui-grid/src/less/animation";
+@import "../ui-grid/src/less/elements";
+@import "../ui-grid/src/less/variables";
+@import "../ui-grid/src/features/cellnav/less/cellNav";
+@import "../ui-grid/src/features/edit/less/edit";
+@import "../ui-grid/src/features/expandable/less/expandable";
+@import "../ui-grid/src/features/exporter/less/exporter";
+@import "../ui-grid/src/features/pinning/less/pinning";
+@import "../ui-grid/src/features/resize-columns/less/column-resizer";
+@import "../ui-grid/src/features/row-edit/less/rowEdit";
+@import "../ui-grid/src/features/selection/less/selection";
+
+// This files constant the CSS for the icons used in the grid
+// To generate it
+//    cd /path/to/ui-grid-src
+//    grunt fontello
+//
+@import (inline) "../ui-grid-bootstrap/ui-grid-codes.css";
+
+@import "variables";
+
+@import "../ui-grid-bootstrap/gridVariables";
+
+
+//// add ../../ to the url
+@font-face {
+  font-family: 'ui-grid';
+  src: url('/assets/lib/ui-grid/ui-grid.eot');
+  src: url('/assets/lib/ui-grid/ui-grid.eot#iefix') format('embedded-opentype'),
+  url('/assets/lib/ui-grid/ui-grid.woff') format('woff'),
+  url('/assets/lib/ui-grid/ui-grid.ttf?') format('truetype'),
+  url('/assets/lib/ui-grid/ui-grid.svg?#ui-grid') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// We need this because ui-grid uses a constant color (#F0F0EE) for this
+.ui-grid-row-header-cell {
+  background-color: @headerBackgroundColor !important;
+}
+
+// Add hover effect for grid, much like bootstrap's table-hover
+.ui-grid.ui-gird-hover {
+  .ui-grid-row {
+    &:hover {
+      &:nth-child(odd) .ui-grid-cell {
+        background-color: darken(@table-bg-hover, 5%); // I like it better when its a little darker
+      }
+
+      &:nth-child(even) .ui-grid-cell {
+        background-color: darken(@table-bg-hover, 5%);
+      }
+
+      &.ui-grid-row-selected .ui-grid-cell{
+        background-color: darken(@rowSelected, 5%) !important;
+      }
+    }
+  }
+}
+
+// Make ui-grid fit better inside a panel
+//.panel {
+//  .ui-grid {
+//    .border-bottom-radius((@panel-border-radius - 1));
+//    .ui-grid-native-scrollbar.horizontal {
+//      .border-bottom-radius((@panel-border-radius - 1));
+//    }
+//    border: 0;
+//  }
+//}
+
