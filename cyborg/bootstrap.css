@@ -6578,6 +6578,115 @@ button.close {
     display: none !important;
   }
 }
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #282828;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.bs-callout h5 {
+  margin-top: 0;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code {
+  border-radius: 3px;
+}
+.bs-callout + .bs-callout {
+  margin-top: -5px;
+}
+.bs-low-padding-callout {
+  padding: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-left-color: #282828;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+.bs-low-padding-callout h4 {
+  margin-top: 0;
+  font-size: 18px;
+}
+.bs-low-padding-callout h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+.bs-callout-default {
+  border-left-color: #adafae;
+}
+.bs-callout-default h4 {
+  border-left-color: #adafae;
+  color: #2e2f2f;
+}
+.bs-callout-default h5 {
+  border-left-color: #adafae;
+  color: #2e2f2f;
+}
+.bs-callout-primary {
+  border-left-color: #2a9fd6;
+}
+.bs-callout-primary h4 {
+  border-left-color: #2a9fd6;
+  color: #2a9fd6;
+}
+.bs-callout-primary h5 {
+  border-left-color: #2a9fd6;
+  color: #2a9fd6;
+}
+.bs-callout-info {
+  border-left-color: #9933cc;
+}
+.bs-callout-info h4 {
+  border-left-color: #9933cc;
+  color: #9933cc;
+}
+.bs-callout-info h5 {
+  border-left-color: #9933cc;
+  color: #9933cc;
+}
+.bs-callout-danger {
+  border-left-color: #cc0000;
+}
+.bs-callout-danger h4 {
+  border-left-color: #cc0000;
+  color: #cc0000;
+}
+.bs-callout-danger h5 {
+  border-left-color: #cc0000;
+  color: #cc0000;
+}
+.bs-callout-warning {
+  border-left-color: #ff8800;
+}
+.bs-callout-warning h4 {
+  border-left-color: #ff8800;
+  color: #ff8800;
+}
+.bs-callout-warning h5 {
+  border-left-color: #ff8800;
+  color: #ff8800;
+}
+.bs-callout-success {
+  border-left-color: #77b300;
+}
+.bs-callout-success h4 {
+  border-left-color: #77b300;
+  color: #77b300;
+}
+.bs-callout-success h5 {
+  border-left-color: #77b300;
+  color: #77b300;
+}
 .text-primary,
 .text-primary:hover {
   color: #2a9fd6;

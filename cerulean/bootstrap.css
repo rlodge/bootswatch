@@ -6577,6 +6577,115 @@ button.close {
     display: none !important;
   }
 }
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eeeeee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.bs-callout h5 {
+  margin-top: 0;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code {
+  border-radius: 3px;
+}
+.bs-callout + .bs-callout {
+  margin-top: -5px;
+}
+.bs-low-padding-callout {
+  padding: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-left-color: #eeeeee;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+.bs-low-padding-callout h4 {
+  margin-top: 0;
+  font-size: 18px;
+}
+.bs-low-padding-callout h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+.bs-callout-default {
+  border-left-color: #eeeeee;
+}
+.bs-callout-default h4 {
+  border-left-color: #eeeeee;
+  color: #6f6f6f;
+}
+.bs-callout-default h5 {
+  border-left-color: #eeeeee;
+  color: #6f6f6f;
+}
+.bs-callout-primary {
+  border-left-color: #2fa4e7;
+}
+.bs-callout-primary h4 {
+  border-left-color: #2fa4e7;
+  color: #2fa4e7;
+}
+.bs-callout-primary h5 {
+  border-left-color: #2fa4e7;
+  color: #2fa4e7;
+}
+.bs-callout-info {
+  border-left-color: #033c73;
+}
+.bs-callout-info h4 {
+  border-left-color: #033c73;
+  color: #033c73;
+}
+.bs-callout-info h5 {
+  border-left-color: #033c73;
+  color: #033c73;
+}
+.bs-callout-danger {
+  border-left-color: #c71c22;
+}
+.bs-callout-danger h4 {
+  border-left-color: #c71c22;
+  color: #c71c22;
+}
+.bs-callout-danger h5 {
+  border-left-color: #c71c22;
+  color: #c71c22;
+}
+.bs-callout-warning {
+  border-left-color: #dd5600;
+}
+.bs-callout-warning h4 {
+  border-left-color: #dd5600;
+  color: #dd5600;
+}
+.bs-callout-warning h5 {
+  border-left-color: #dd5600;
+  color: #dd5600;
+}
+.bs-callout-success {
+  border-left-color: #73a839;
+}
+.bs-callout-success h4 {
+  border-left-color: #73a839;
+  color: #73a839;
+}
+.bs-callout-success h5 {
+  border-left-color: #73a839;
+  color: #73a839;
+}
 .navbar {
   background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
   background-image: -o-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);

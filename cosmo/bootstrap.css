@@ -6578,6 +6578,115 @@ button.close {
     display: none !important;
   }
 }
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #e6e6e6;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.bs-callout h5 {
+  margin-top: 0;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code {
+  border-radius: 3px;
+}
+.bs-callout + .bs-callout {
+  margin-top: -5px;
+}
+.bs-low-padding-callout {
+  padding: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-left-color: #e6e6e6;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+.bs-low-padding-callout h4 {
+  margin-top: 0;
+  font-size: 18px;
+}
+.bs-low-padding-callout h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+.bs-callout-default {
+  border-left-color: #e6e6e6;
+}
+.bs-callout-default h4 {
+  border-left-color: #e6e6e6;
+  color: #666666;
+}
+.bs-callout-default h5 {
+  border-left-color: #e6e6e6;
+  color: #666666;
+}
+.bs-callout-primary {
+  border-left-color: #2780e3;
+}
+.bs-callout-primary h4 {
+  border-left-color: #2780e3;
+  color: #2780e3;
+}
+.bs-callout-primary h5 {
+  border-left-color: #2780e3;
+  color: #2780e3;
+}
+.bs-callout-info {
+  border-left-color: #9954bb;
+}
+.bs-callout-info h4 {
+  border-left-color: #9954bb;
+  color: #9954bb;
+}
+.bs-callout-info h5 {
+  border-left-color: #9954bb;
+  color: #9954bb;
+}
+.bs-callout-danger {
+  border-left-color: #ff0039;
+}
+.bs-callout-danger h4 {
+  border-left-color: #ff0039;
+  color: #ff0039;
+}
+.bs-callout-danger h5 {
+  border-left-color: #ff0039;
+  color: #ff0039;
+}
+.bs-callout-warning {
+  border-left-color: #ff7518;
+}
+.bs-callout-warning h4 {
+  border-left-color: #ff7518;
+  color: #ff7518;
+}
+.bs-callout-warning h5 {
+  border-left-color: #ff7518;
+  color: #ff7518;
+}
+.bs-callout-success {
+  border-left-color: #3fb618;
+}
+.bs-callout-success h4 {
+  border-left-color: #3fb618;
+  color: #3fb618;
+}
+.bs-callout-success h5 {
+  border-left-color: #3fb618;
+  color: #3fb618;
+}
 .navbar-inverse .badge {
   background-color: #fff;
   color: #2780e3;
